@@ -1,0 +1,12 @@
+%clearfix {
+	&:after, &:before {
+		content: "";
+		display: block;
+		clear: both;
+	}
+}
+
+// пример подключения
+// .class-1 {
+// 	@extend %clearfix;
+// }
