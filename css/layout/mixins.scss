@@ -1,9 +1,11 @@
 %clearfix {
 	&:after, &:before {
 		content: "";
-		display: block;
-		clear: both;
-	}
+		display: table;
+  }
+  &:after {
+  	clear: both;
+  }
 }
 
 // пример подключения

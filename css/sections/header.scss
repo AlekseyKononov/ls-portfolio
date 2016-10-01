@@ -1,13 +1,52 @@
- .header__left {
- 	width: 220;
+ .header {
+ 	background: #fff;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+ }
+
+ .container {
+	@extend %clearfix;
+}
+
+ .header__left, .header__right {
+ 	width: 50%;
  	height: 80px;
- 	background: orange;
  	float: left;
  }
 
- .header__right {
- 	width: 220;
- 	height: 80px;
- 	background: orange;
- 	float: right;
+ .user__avatar, .user__name {
+ 	display: inline-block;
+ 	vertical-align: middle;
  }
+
+ .user__name {
+ 	margin-left: 20px;
+ 	margin-top: 10px;
+ 	max-width: 240px;
+ 	font-size: 18px;
+ }
+
+ .user__avatar-pic {
+ 	margin-top: 10px;
+ 	max-width: 60px;
+ 	max-height: 60px;
+ 	display: block;
+ 	border-radius: 50%;
+ }
+
+
+ .header__right {
+ 	text-align: right;
+ }
+
+ .contacts {
+ 	margin-top: 30px;
+ }
+
+ .contacts__trigger {
+ 	background: url('../../img/items/LayerDotted3.png') 0 bottom repeat-x;
+ 	color: #33c1e3;
+ 	font-size: 18px;
+ }
+
+
+ 
