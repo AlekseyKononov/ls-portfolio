@@ -4,6 +4,7 @@ body {
 	height: 100%;
 	padding: 0;
 	margin: 0;
+	font-family: 'FiraSans-Regular';
 }
 
 ul {
@@ -36,7 +37,7 @@ a {
 	
 	&:after {
 		content: "";
-		height: 80px;
+		height: 50px;
 		display: block;
 	}
 }
@@ -47,7 +48,17 @@ a {
 	margin: 0 auto;
 }
 
-.main-content {
+.maincontent {
 	padding-bottom: 50px;
+	background: #F6F6F6;
 }
+
+.footer {
+	min-width: 960px;
+	background: #414141;
+	position: relative;
+	height: 50px;
+	margin-top: -50px;
+}
+
 

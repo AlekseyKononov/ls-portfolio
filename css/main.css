@@ -448,6 +448,7 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
+  font-family: 'FiraSans-Regular';
 }
 
 ul {
@@ -481,7 +482,7 @@ a {
 
 .wrapper:after {
   content: "";
-  height: 80px;
+  height: 50px;
   display: block;
 }
 
@@ -491,13 +492,23 @@ a {
   margin: 0 auto;
 }
 
-.main-content {
+.maincontent {
   padding-bottom: 50px;
+  background: #F6F6F6;
+}
+
+.footer {
+  min-width: 960px;
+  background: #414141;
+  position: relative;
+  height: 50px;
+  margin-top: -50px;
 }
 
 .header {
   background: #fff;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  margin-bottom: 25px;
 }
 
 .header__left, .header__right {
@@ -512,9 +523,9 @@ a {
 }
 
 .user__name {
-  margin-left: 20px;
-  margin-top: 10px;
-  max-width: 240px;
+  margin-left: 15px;
+  margin-top: 16px;
+  max-width: 250px;
   font-size: 18px;
 }
 
@@ -540,23 +551,105 @@ a {
   font-size: 18px;
 }
 
-.content {
-  background: #f6f6f6;
+.about__left {
+  float: left;
+  width: 40%;
+  text-align: center;
+}
+
+.about__pic {
+  display: inline-block;
+  border: 2px solid #ffffffff;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-left: 26px;
+  margin-top: 5px;
+}
+
+.about__pic-item {
+  max-width: 220px;
+  max-height: 220px;
+  display: block;
+}
+
+.about__right {
+  margin-top: -21px;
+  float: right;
+  width: 55%;
+}
+
+.content-title {
+  margin-left: 7px;
+}
+
+.about__text {
+  height: 300px;
+  overflow: auto;
+  margin-bottom: 45px;
+}
+
+.text-block {
+  font-family: 'FiraSans-light';
+  color: #646464;
   font-size: 18px;
+  line-height: 22px;
+}
+
+.text-block p {
+  margin-bottom: 10px;
+}
+
+.about__download {
+  text-align: right;
+  padding-top: 32px;
+}
+
+.about__download-link {
+  width: 175px;
+  font-family: 'FiraSans-Bold';
+  padding: 9px 12px;
+  border: 2px solid #e85f61;
+  color: #e85f61;
+  text-decoration: none;
+  font-size: 14px;
+  display: inline-block;
+  border-radius: 40px;
+  font-family: 'FiraSans-Bold';
+}
+
+.about__download-link:hover {
+  color: #fff;
+  background: #e85f61;
+}
+
+.about__download-link-icon {
+  margin-right: 150px;
+}
+
+.about__download-link-text {
+  font-family: 'FiraSans-Bold';
+  font-size: 16px;
+  margin-bottom: 3px;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  bottom: 106px;
+  right: 184px;
 }
 
 .sidebar {
-  width: 25%;
+  width: 24%;
   float: left;
 }
 
-.stuff {
-  width: 75%;
-  float: right;
+.nav__item {
+  font-family: 'FiraSans-light';
+  margin-bottom: -4px;
+  margin-right: 6px;
 }
 
-.nav__item {
-  margin-bottom: 30px;
+.nav__item-fa {
+  margin-right: 7px;
 }
 
 .nav__list {
@@ -564,10 +657,12 @@ a {
 }
 
 .nav__link {
+  display: block;
   color: black;
   padding: 10px 0;
   padding-right: 20px;
   border-right: 6px solid #33c1e3;
+  font-size: 18px;
 }
 
 .nav__link:hover {
@@ -578,65 +673,40 @@ a {
   font-weight: bold;
 }
 
-.about__left {
-  float: left;
-  width: 40%;
-}
-
-.about__right {
+.stuff {
+  width: 75%;
   float: right;
-  width: 55%;
-}
-
-.about__pic-item {
-  max-width: 220px;
-  max-height: 220px;
-  border-radius: 50%;
 }
 
 .content-title {
-  margin-bottom: 15px;
+  font-family: 'FiraSans-Medium';
   font-size: 35px;
-}
-
-.about__text {
-  height: 400px;
-  overflow: auto;
-  margin-bottom: 40px;
-}
-
-.about__download-link {
-  background-color: #f6f6f6;
-  background-repeat: no-repeat;
-  border: solid 2px #e85f61;
-  border-radius: 20px;
-  width: 173px;
-  height: 40px;
-  display: inline-block;
-  color: #e85f61;
-}
-
-.about__download-link:hover {
-  background-color: #e85f61;
-  color: #f6f6f6;
-}
-
-.about__download {
-  text-align: right;
-}
-
-.about__download-link-text {
-  text-align: center;
-}
-
-.about__text p {
-  margin-bottom: 10px;
+  color: #414141;
+  margin-bottom: 16px;
+  line-height: 38px;
 }
 
 .footer {
-  position: relative;
-  height: 80px;
-  margin-top: -80px;
+  background: #414141;
+}
+
+.copyright {
+  font-size: 14px;
+  line-height: 16px;
+  color: #9c9c9c;
+  position: absolute;
+  left: 168px;
+  top: 18px;
+}
+
+.socials__list {
+  position: absolute;
+  right: 0;
+  top: 10px;
+}
+
+.socials__item {
+  display: inline-block;
 }
 
 /*# sourceMappingURL=main.css.map */

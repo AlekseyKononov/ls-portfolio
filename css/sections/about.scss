@@ -1,0 +1,89 @@
+.about {
+	@extend %clearfix;
+}
+
+.about__left, {
+	float: left;
+	width: 40%;
+  text-align: center;
+}
+
+.about__pic {
+  display: inline-block;
+  border: 2px solid #ffffffff;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-left: 26px;
+  margin-top: 5px;
+}
+
+.about__pic-item {
+	max-width: 220px;
+	max-height: 220px;
+  display: block;	
+}
+
+.about__right {
+  margin-top: -21px;
+  float: right;
+  width: 55%;
+}
+
+.content-title {
+  margin-left: 7px;
+}
+
+.about__text {
+ height: 300px;
+ overflow: auto;
+ margin-bottom: 45px;
+}
+
+.text-block {
+  font-family: 'FiraSans-light';
+  color: #646464;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.text-block p {
+  margin-bottom: 10px;
+}
+
+.about__download {
+  text-align: right;
+  padding-top: 32px;
+
+}
+
+.about__download-link {
+  width: 175px;
+  font-family:'FiraSans-Bold';
+  padding:9px 12px;
+  border:2px solid #e85f61;
+  color:#e85f61;
+  text-decoration:none;
+  font-size:14px;
+  display:inline-block;
+  border-radius:40px;
+  font-family:'FiraSans-Bold';
+  &:hover {
+    color:#fff;
+    background:#e85f61;
+  }
+}
+
+.about__download-link-icon {
+  margin-right: 150px;
+}
+
+.about__download-link-text {
+  font-family: 'FiraSans-Bold';
+  font-size: 16px;
+  margin-bottom: 3px;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  bottom: 106px;
+  right: 184px;
+}

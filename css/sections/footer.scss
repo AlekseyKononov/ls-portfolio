@@ -1,6 +1,57 @@
 .footer {
-	
-	position: relative;
-	height: 80px;
-	margin-top: -80px;
+	background: #414141;
 }
+
+// .socials__link {
+// 	display: block;
+// 	width: 32px;
+// 	height: 32px;
+// 	background-image:url(../../img/items/spritesheet.png);
+// 	background-repeat:no-repeat
+// }
+
+//  .socials__link_fb {
+// 	background-position:-5px -5px;
+// 	&:hover {
+// 	background-position:-46px -5px;
+// 	}
+// }
+
+//  .socials__link_vk {
+// 	background-position: -87px -5px;
+// 	&:hover {
+// 		background-position: -85px -45px;
+// 	}
+// }
+
+//  .socials__link_tw {
+// 	background-position: -5px -45px;
+// 	&:hover {
+// 		background-position: -45px -45px;
+// 	}
+// }
+
+.copyright {
+  font-size:14px;
+  line-height:16px;
+  color:#9c9c9c;
+  position:absolute;
+  left:168px;
+  top:18px
+}
+
+.socials__list {
+	position:absolute;
+	right:0;
+	top:10px
+}
+
+.socials__item {
+	display:inline-block
+}
+
+
+
+
+
+
