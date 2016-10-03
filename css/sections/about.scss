@@ -57,6 +57,7 @@
 }
 
 .about__download-link {
+  text-align: center;
   width: 175px;
   font-family:'FiraSans-Bold';
   padding:9px 12px;
@@ -74,16 +75,14 @@
 }
 
 .about__download-link-icon {
-  margin-right: 150px;
+  
 }
 
 .about__download-link-text {
   font-family: 'FiraSans-Bold';
   font-size: 16px;
-  margin-bottom: 3px;
-  text-align: center;
-  display: inline-block;
-  position: absolute;
-  bottom: 106px;
-  right: 184px;
+  
+  padding-left: 5px;
+  
+  
 }
