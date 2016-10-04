@@ -29,10 +29,6 @@
   width: 55%;
 }
 
-.content-title {
-  margin-left: 7px;
-}
-
 .about__text {
  height: 300px;
  overflow: auto;
@@ -46,7 +42,7 @@
   line-height: 22px;
 }
 
-.text-block p {
+.about__text p {
   margin-bottom: 10px;
 }
 
@@ -74,9 +70,6 @@
   }
 }
 
-.about__download-link-icon {
-  
-}
 
 .about__download-link-text {
   font-family: 'FiraSans-Bold';

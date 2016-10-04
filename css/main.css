@@ -433,12 +433,12 @@ textarea {
   font-style: normal;
 }
 
-.container:after, .about:after, .container:before, .about:before {
+.container:after, .about:after, .career:after, .container:before, .about:before, .career:before {
   content: "";
   display: table;
 }
 
-.container:after, .about:after {
+.container:after, .about:after, .career:after {
   clear: both;
 }
 
@@ -578,10 +578,6 @@ a {
   width: 55%;
 }
 
-.content-title {
-  margin-left: 7px;
-}
-
 .about__text {
   height: 300px;
   overflow: auto;
@@ -595,7 +591,7 @@ a {
   line-height: 22px;
 }
 
-.text-block p {
+.about__text p {
   margin-bottom: 10px;
 }
 
@@ -640,6 +636,10 @@ a {
   margin-right: 6px;
 }
 
+.nav__item_active {
+  border-right: 6px solid #33c1e3;
+}
+
 .nav__item-fa {
   margin-right: 7px;
 }
@@ -653,7 +653,6 @@ a {
   color: black;
   padding: 10px 0;
   padding-right: 20px;
-  border-right: 6px solid #33c1e3;
   font-size: 18px;
 }
 
@@ -665,6 +664,87 @@ a {
   font-weight: bold;
 }
 
+.career__left {
+  float: left;
+  width: 30%;
+}
+
+.career__pic {
+  overflow: hidden;
+  margin-left: 6px;
+  margin-top: 17px;
+  border-radius: 9%;
+}
+
+.career__pic-img {
+  min-width: 220px;
+  max-height: 220px;
+}
+
+.career__right {
+  float: right;
+  width: 60%;
+}
+
+.career__title {
+  font-family: 'FiraSans-Regular';
+  font-size: 21px;
+  color: #5a5a5a;
+  margin-bottom: 5px;
+}
+
+.career__block {
+  text-align: left;
+  display: inline-block;
+  position: relative;
+  height: 109px;
+  width: 380px;
+  background: white;
+  border-radius: 10%;
+  margin-bottom: 20px;
+  margin-left: 42px;
+  padding: 15px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.career__block:hover {
+  background: #33c1e3;
+  color: white;
+}
+
+.career__block:hover:after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  background: black;
+  left: -20px;
+}
+
+.career__occupation,
+.career-date {
+  font-family: 'FiraSans-Light';
+  font-size: 18px;
+}
+
+.career__item {
+  font-size: 0;
+  margin-bottom: 20px;
+}
+
+.career__year:after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #33c1e3;
+  border: 5px solid #f6f6f6;
+  position: absolute;
+  right: 425px;
+  top: 50%;
+  margin-top: -10px;
+  border-radius: 50%;
+}
+
 .stuff {
   width: 75%;
   float: right;
@@ -674,8 +754,9 @@ a {
   font-family: 'FiraSans-Medium';
   font-size: 35px;
   color: #414141;
-  margin-bottom: 16px;
-  line-height: 38px;
+  margin-bottom: 0px;
+  margin-top: 15px;
+  margin-left: 4px;
 }
 
 .footer {

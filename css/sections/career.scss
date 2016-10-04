@@ -1,0 +1,83 @@
+.career {
+	@extend %clearfix;
+}
+
+.career__left {
+	float: left;
+	width: 30%;
+}
+
+.career__pic {
+	overflow: hidden;
+  margin-left: 6px;
+  margin-top: 17px;
+  border-radius: 9%;
+}
+
+.career__pic-img {
+	min-width: 220px;
+  max-height: 220px;
+}
+
+.career__right {
+	float: right;
+	width: 60%;
+}
+
+.career__title {
+	@include fira('regular');
+	font-size: 21px;
+	color: #5a5a5a;
+	margin-bottom: 5px;
+}
+
+.career__block {
+	text-align: left;
+	display: inline-block;
+	position: relative;
+	height: 109px;
+	width: 380px;
+	background: white;
+	border-radius: 10%;
+	margin-bottom: 20px;
+	margin-left: 42px;
+	padding: 15px;
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+	&:hover {
+		background: #33c1e3;
+		color: white;
+	&:after {
+		content: "";
+		position: absolute;
+		width: 1px;
+		background: black;
+		left: -20px;
+	}
+	}
+}
+
+
+.career__occupation,
+.career-date {
+	@include fira('light');
+	font-size: 18px;
+}
+
+.career__item {
+	font-size:0;
+	margin-bottom:20px;
+}
+
+.career__year:after {
+	content: "";
+	display:block;
+	width:10px;
+	height:10px;
+	background:#33c1e3;
+	border:5px solid #f6f6f6;
+	position:absolute;
+	right:425px;
+	top:50%;
+	margin-top:-10px;
+	border-radius:50%;
+}

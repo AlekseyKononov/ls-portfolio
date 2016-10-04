@@ -12,3 +12,16 @@
 // .class-1 {
 // 	@extend %clearfix;
 // }
+
+
+@mixin fira ($style: 'regular') {
+	@if $style == 'regular' {
+		font-family: 'FiraSans-Regular';
+	} @else if $style == 'bold' {
+		font-family: 'FiraSans-Bold';
+	} @else if $style == 'light' {
+		font-family: 'FiraSans-Light';
+	} @else if  $style == 'medium' {
+		font-family: 'FiraSans-Medium';
+	}
+}

@@ -9,6 +9,10 @@
 	margin-right: 6px;
 }
 
+.nav__item_active {
+	border-right: 6px solid #33c1e3;
+}
+
 .nav__item-fa {
 	margin-right: 7px;
 }
@@ -22,7 +26,7 @@
 	color: black;
 	padding: 10px 0;
 	padding-right: 20px;
-	border-right: 6px solid #33c1e3;
+	// border-right: 6px solid #33c1e3;
 	font-size: 18px;
 	
 	&:hover {
