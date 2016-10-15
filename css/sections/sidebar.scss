@@ -1,5 +1,5 @@
 .sidebar {
-	width: 24%;
+	width: 23%;
 	float: left;
 }
 
@@ -26,14 +26,14 @@
 	color: black;
 	padding: 10px 0;
 	padding-right: 20px;
-	// border-right: 6px solid #33c1e3;
+	border-right: 6px solid transparent;
 	font-size: 18px;
 	
 	&:hover {
 		color: #33c1e3;
 		
 		&:active {
-			font-weight: bold;
+			color: #33c1e3;
 		}
 	}
 }

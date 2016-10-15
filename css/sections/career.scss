@@ -4,54 +4,62 @@
 
 .career__left {
 	float: left;
-	width: 30%;
+	width: 220px;
 }
 
 .career__pic {
 	overflow: hidden;
-  margin-left: 6px;
-  margin-top: 17px;
   border-radius: 9%;
 }
 
 .career__pic-img {
+	display: block;
 	min-width: 220px;
   max-height: 220px;
 }
 
 .career__right {
 	float: right;
-	width: 60%;
+	width: 445px;
 }
 
 .career__title {
-	@include fira('regular');
 	font-size: 21px;
 	color: #5a5a5a;
 	margin-bottom: 5px;
 }
 
 .career__block {
-	text-align: left;
-	display: inline-block;
-	position: relative;
-	height: 109px;
-	width: 380px;
-	background: white;
-	border-radius: 10%;
-	margin-bottom: 20px;
-	margin-left: 42px;
-	padding: 15px;
-	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+	  width: 380px;
+    display: inline-block;
+    position: relative;
+    background: #fff;
+    border-radius: 9px;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    text-align: left;
+    padding: 15px;
 	&:hover {
 		background: #33c1e3;
 		color: white;
-	&:after {
+
+	&:after,
+	&:before {
 		content: "";
-		position: absolute;
-		width: 1px;
-		background: black;
-		left: -20px;
+    display: block;
+    position: absolute;
+    width: 1px;
+    background: #ddd;
+    left: -20px;
+
+  &:before {
+		top: 0;
+    bottom: 50%;
+
+  &:after {
+  	bottom: -22px;
+  	top: 50%;
+  }
+  }
 	}
 	}
 }
@@ -64,51 +72,33 @@
 }
 
 .career__item {
+	text-align: right;
 	font-size:0;
 	margin-bottom:20px;
 }
 
-.career__year:after {
-	content: "";
-	display:block;
-	width:10px;
-	height:10px;
-	background:#33c1e3;
-	border:5px solid #f6f6f6;
-	position:absolute;
-	right:425px;
-	top:50%;
-	margin-top:-10px;
-	border-radius:50%;
+.career__year {
+    position: absolute;
+    right: 100%;
+    font-size: 14px;
+    top: 50%;
+    margin-top: -8px;
+    margin-right: 34px;
+    color: #727272;
+
+    &:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #33c1e3;
+    border: 5px solid #f6f6f6;
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    z-index: 1;
+    margin-top: -10px;
+    border-radius: 50%;
 }
-
-
-
-
-// Код для полосок - но не ясно, как пользоваться
-// &:after, &:before {
-//         content: "";
-//         display: block;
-//         position: absolute;
-//         width: 1px;
-//         background: #dddddd ;
-//         left: -22px;
-//     }
-
-//     &:before {
-//         top: 0;
-//         bottom: 50%;
-//     }
-
-//     &:after {
-//         bottom: -20px;
-//         top: 50%;
-//     }
-
-
-
-
-
-
-
+}
 

@@ -20,13 +20,12 @@
  }
 
  .user__name {
- 	margin-left: 15px;
-  margin-top: 16px;
   max-width: 250px;
   font-size: 18px;
  }
 
  .user__avatar-pic {
+ 	margin-right: 15px;
  	margin-top: 10px;
  	max-width: 60px;
  	max-height: 60px;
@@ -34,20 +33,101 @@
  	border-radius: 50%;
  }
 
-
  .header__right {
  	text-align: right;
  }
 
  .contacts {
  	margin-top: 30px;
+ 	display: inline-block;
+ 	position: relative;
  }
 
  .contacts__trigger {
- 	background: url('../../img/items/LayerDotted3.png') 0 bottom repeat-x;
+ 	border-bottom: 2px dotted #33c1e3;
  	color: #33c1e3;
  	font-size: 18px;
  }
+
+ .contacts__dropdown {
+    padding: 15px 20px;
+    background: #fff;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    margin-top: 12px;
+    &:hover {
+    	visibility: visible;
+    }
+}
+
+.contacts__dropdown:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 30px;
+    top: -28px
+}
+
+.contacts__dropdown-triangle {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 10px;
+    width: 20px
+}
+
+.contacts__dropdown-triangle:after,
+.contacts__dropdown-triangle:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+    border-top-width: 0;
+    top: 0;
+    position: absolute;
+    left: 0;
+    transform: translate(-50%)
+}
+
+.contacts__dropdown-triangle:before {
+    border-bottom-color: #dedede
+}
+
+.contacts__dropdown-triangle:after {
+    border-bottom-color: #fff;
+    margin-top: 1px
+}
+
+.contacts__dropdown-link {
+    white-space: nowrap;
+    font-size: 18px;
+    font-family: "fira_sanslight";
+    color: #414141;
+    text-decoration: none;
+    text-align: left;
+    display: block
+}
+
+.contacts__dropdown-icon {
+    color: #33c1e3;
+    margin-right: 15px
+}
+
+.contacts__dropdown-item {
+    margin-bottom: 15px
+}
+
+.contacts__dropdown-item:last-child {
+    margin-bottom: 0
+}
 
 
  

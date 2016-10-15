@@ -1,0 +1,110 @@
+@media screen and (max-width:768px) {
+    .container {
+        width: 480px
+    }
+    .header__left {
+        width: 75%
+    }
+    .header__right {
+        width: 25%
+    }
+    .contacts {
+        margin-top: 22px
+    }
+    .contacts .contacts__trigger {
+        background: url(../img/items/phone.png) 0 0 no-repeat;
+    }
+    
+    .contacts__dropdown {
+        transform: translateX(0);
+        right: 0;
+        left: auto
+    }
+    .contacts__dropdown-triangle {
+        right: 0;
+        transform: translateX(0);
+        left: auto
+    }
+    .contacts__trigger {
+        text-indent: 9999px;
+        display: inline-block;
+        white-space: nowrap;
+        width: 32px;
+        height: 32px
+    }
+    .nav__item {
+        margin-left: 10px;
+    }
+    .nav__item_active {
+        border-right: none;
+    }
+    .about__left {
+        float: none;
+        width: 100%;
+        margin-bottom: 15px
+    }
+    .about__right {
+        float: none;
+        width: 100%
+    }
+    .content-title {
+        text-align: center
+    }
+    .about__text {
+        height: auto
+    }
+    .about__download {
+        text-align: center
+    }
+    .career__left {
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px
+    }
+    .career__pic {
+        display: inline-block
+    }
+    .career__right {
+        float: none;
+        width: 100%
+    }
+    .career__block:after,
+    .career__block:before {
+        display: none
+    }
+    .career__block .career__year {
+        display: none
+    }
+    .career__block {
+        width: 100%
+    }
+    .wrapper:after {
+        height: 95px
+    }
+    .footer {
+        height: 95px;
+        margin-top: -95px
+    }
+    .footer .container {
+        padding-top: 15px
+    }
+    .copyright {
+        position: static;
+        text-align: center
+    }
+    .socials__list {
+        position: static;
+        text-align: center
+    }
+    .footer__left {
+        margin-bottom: 10px
+    }
+    .portfolio__list {
+        margin-left: -2%
+    }
+    .portfolio__item {
+        width: 48%;
+        margin-left: 2%
+    }
+}
